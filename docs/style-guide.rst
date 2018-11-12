@@ -809,7 +809,21 @@ possible permutations for function declarations.
 Mappings
 ========
 
-TODO
+Surround the type of a ``mapping`` by parentheses. In variable declarations, separate the keyword ``mapping`` from its type by a single space. Do not separate any nested ``mapping`` keyword from its type by whitespace.
+
+Yes::
+
+    mapping (uint => uint) map;
+    mapping (address => bool) registeredAddresses;
+    mapping (uint => mapping(bool => Data[])) public data;
+    mapping (uint => mapping(uint => s)) data;
+
+No::
+
+    mapping(uint => uint) map;
+    mapping( address => bool ) registeredAddresses;
+    mapping(uint => mapping (bool => Data[])) public data;
+    mapping(uint => mapping(uint => s)) data;
 
 Variable Declarations
 =====================
