@@ -105,6 +105,8 @@ void CodeTransform::operator()(FunctionCall const& _call)
 		m_stackAdjustment++;
 	}
 
+
+
 	Scope::Function* function = nullptr;
 	solAssert(m_scope->lookup(_call.functionName.name, Scope::NonconstVisitor(
 		[=](Scope::Variable&) { solAssert(false, "Expected function name."); },
