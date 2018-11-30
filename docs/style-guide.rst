@@ -809,7 +809,9 @@ possible permutations for function declarations.
 Mappings
 ========
 
-Surround the type of a ``mapping`` by parentheses. In variable declarations, separate the keyword ``mapping`` from its type by a single space. Do not separate any nested ``mapping`` keyword from its type by whitespace.
+In variable declarations, separate the keyword ``mapping`` from its type by a
+single space. Do not separate any nested ``mapping`` keyword from its type by
+whitespace.
 
 Yes::
 
